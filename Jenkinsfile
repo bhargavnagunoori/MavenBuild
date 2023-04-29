@@ -14,7 +14,7 @@ node(){
 	
 
 	stage('Code Deployment'){
-		deploy adapters: [tomcat9(credentialsId: 'TomcatCreds', path: '', url: 'http://44.211.70.34:8080/')], contextPath: 'pipelinetestapp', onFailure: false, war: 'target/*.war'
+		deploy adapters: [tomcat9(credentialsId: 'TomcatCreds', path: '', url: 'http://44.211.70.34:8080/')], contextPath: 'bhargav', onFailure: false, war: 'target/*.war'
 	}
 
 	stage('email notification'){
